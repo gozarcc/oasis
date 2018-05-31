@@ -7,9 +7,6 @@
 
 	<title>Oasis | Female Models</title>
 
-	<!-- EXTERNAL CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	<!-- BOOTSTRAP CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -21,12 +18,17 @@
 
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
+
+<div class="container-fluid" id="body-container">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-		<a class="navbar-brand" href="assets/images/panda.png" id="logo">OASIS</a>
+		<a class="navbar-brand" href="index.html" id="logo">OASIS</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
@@ -39,6 +41,10 @@
 				</li>
 
 				<li class="nav-item">
+					<a class="nav-link" href="#about"> About</a>
+				</li>
+
+				<li class="nav-item">
 					<a class="nav-link" href="female-models.html"> Female</a>
 				</li>
 
@@ -47,207 +53,361 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="contact.html"> Contact</a>
+					<a class="nav-link" href="#contact-container"> Contact</a>
 				</li>
 			</ul>
 		</div>	
 	</nav> <!-- end nav -->
 
 	<div class="container-fluid">
+		<div class="row">
+			<div class="jumbotron col-12 col-sm-12 col-md-12 col-lg-12 py-3" id="jumbotron">
+				<h3 class="display-3 mx-auto text-center">FEMALE MODELS</h3>
+				<hr class="my-3">
 
-		
-			<!-- <nav id="sidebar" class="nav navbar-expand-lg col-md-1 col-sm-1 p-0 my-0 d-block text-center">
-		  		<a class="navbar-brand m-auto py-5" href="index.html">OASIS</a>
-		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-		    		<span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x" id="navbar-icon"></i></span>
-		  		</button>
+				<!-- first row of photos -->
+				<div class="row">
 
-		  		<div class="collapse navbar-collapse" id="navbarNav">
-		    		<ul class="mx-auto">
-		      			<li class="nav-item active">
-		        			<a class="nav-link animated rubberBand" href="#"><i class="fas fa-home fa-2x"></i></a>
-		      			</li>
+					<!-- first pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal1">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-1-thumbnail.jpg">
 
-		      			<li class="nav-item">
-		        			<a class="nav-link animated rubberBand" href="#"><i class="fas fa-venus fa-2x"></i></a>
-		      			</li>
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 1</h5>
+							</div>
+						</div>
 
-		      			<li class="nav-item">
-		        			<a class="nav-link animated rubberBand" href="#"><i class="fas fa-mars fa-2x"></i></a>
-		      			</li>
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal1" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 1</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
 
-		      			<li class="nav-item">
-		        			<a class="nav-link animated rubberBand" href="#"><i class="fas fa-phone fa-2x"></i></a>
-		      			</li>
-				    </ul>
-		  		</div>
-			</nav>  --><!-- end of nav -->
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-6">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-1-thumbnail.jpg">
+												</div>
+
+												<div class="col-md-6">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-1-2nd.jpg">
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of first pic -->
+
+					<!-- second pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal2">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-2-thumbnail.jpg">
+
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 2</h5>
+							</div>
+						</div>
+
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal2" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 2</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-2-1st.jpg">
+												</div>
+
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-2-2nd.jpg">
+												</div>
+
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of second pic -->
+
+					<!-- third pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal3">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-3-thumbnail.jpg">
+
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 3</h5>
+							</div>
+						</div>
+
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal3" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 3</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-3-1st.jpg">
+												</div>
+
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-3-2nd.jpg">
+												</div>
+
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of third pic -->
+				</div> <!-- end of first row of photos -->
+
+				<!-- second row of photos -->
+				<div class="row mt-4">
+
+					<!-- fourth pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal4">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-4-thumbnail.jpg">
+
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 4</h5>
+							</div>
+						</div>
+
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal4" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 4</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-12">
+													<img class="img-fluid p-2" src="assets/images/female-models/femalemodel-4-1st.jpg">
+												</div>
+
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of fourth pic -->
+
+					<!-- fifth pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal5">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-5-thumbnail.jpg">
+
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 5</h5>
+							</div>
+						</div>
+
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal5" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 5</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-5-1st.jpg">
+												</div>
+
+												<div class="col-md-12">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-5-2nd.jpg">
+												</div>
+
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of fifth pic -->
+
+					<!-- sixth pic -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="card image-container girl-image-hover" type="button" data-toggle="modal" data-target="#modal6">
+							<img class="sample-images img-fluid" src="assets/images/female-models/femalemodel-6-1st.jpg">
+
+							<div class="card-body">
+								<h5 class="card-text text-center">Female Model 6</h5>
+							</div>
+						</div>
+
+						<!-- #image1 modal -->
+						<div class="modal fade" id="modal6" role="dialog">
+							<div class="modal-dialog modal-dialog-centered modal-lg" id="modal-size">
+								
+								<!-- model content -->
+								<div class="modal-content" >
+									<div class="modal-header">
+										<h4 class="modal-title">Female Model 6</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<div class="modal-body row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-sm-12 col-md-6 p-1">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-6-1st.jpg">
+												</div>
+
+												<div class="col-sm-12 col-md-6 p-1">
+													<img class="img-fluid" src="assets/images/female-models/femalemodel-6-2nd.jpg">
+												</div>
+
+											</div>
+										</div>
+									</div> <!-- end of modal-body -->
+
+								</div> <!-- end of modal-content -->
+							</div>
+						</div> <!-- end of image modal -->
+					</div> <!-- end of sixth pic -->
+				</div> <!-- end of second row of photos -->
+
+			</div> <!-- end of jumbotron -->
+		</div> <!-- end of row -->
+	</div> <!-- end of container-fluid -->
+	
+
+<!-- CONTACTS -->
+	<div class="container-fluid" id="contact-container">
+		<!-- contact -->
+		<div class="col-12 col-sm-12 col-md-12">
 
 			<div class="row">
-				<div class="jumbotron col-md-12 py-3" id="jumbotron">
-					<h2 class="display-3 mx-auto text-center">FEMALE MODELS</h2>
-					<hr class="my-3">
-
-					<div class="row">
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-body px-3 pb-3">
+							<small>
+								<h5 class="card-title">Address</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</small>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
+						<div class="card-body p-3">
+							<h5 class="card-title">Models</h5>
+								<small>
+									<dl>
+										<dt>Female</dt>
+										<dd>0998 XXX XXXX</dd>
 
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
+										<dt>Male</dt>
+										<dd>0998 XXX XXXX</dd>
+									</dl>
+								</small>
 						</div>
 					</div>
+				</div>
 
-					<div class="row">
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-body px-3 pb-3">
+							<small>
+								<h5 class="card-title">Email</h5>
+								<p class="card-text">bookamodel@oasismanagement.com.ph</p>
+								<p class="card-text">bookamodel@oasismodel.com.ph</p>
+								<p class="card-text">info@oasishelpdesk.com.ph</p>
 
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
+							</small>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
+						<div class="card-body px-3 pb-3">
+							<small>
+								<h5 class="card-title">Jobs</h5>
+								<p class="card-text">careers@oasismanagement.com.ph</p>
+							</small>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-3">
-							<div class="card">
-								<img class="sample-images img-fluid" src="assets/images/image1.jpg">
-
-								<div class="card-body">
-									<h5 class="card-text text-center">Female Model 1</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
-		</div>
-	
+		</div> <!-- end of left side contact -->
+	</div>
+	<!-- END OF CONTACTS -->
 
 
-	
+
+	<div class="container-fluid">
+		<footer class="row p-3">
+			<div class="col-12 col-sm-12 col-md-12">
+				<div class="social-container mx-auto px-auto">
+					<span >
+						<a href="https://www.facebook.com/lunayoasis"><i class="fab fa-facebook-square fa-2x"></i></a>
+					</span>
+
+					<span>
+						<a href="https://www.instagram.com/msrahc/"><i class="fab fa-instagram fa-2x"></i></a>
+					</span>
+
+					<span>
+						<a href="https://gitlab.com/gozarcc"><i class="fab fa-gitlab fa-2x"></i></a>
+					</span>
+
+					<span>
+						<a href="https://github.com/gozarcc"><i class="fab fa-github fa-2x"></i></a>
+					</span>
+
+					<a id="back-to-top" href="#body-container"><i class="fas fa-chevron-circle-up fa-lg"></i></a>
+				</div>
+			</div>
 
 
-<!-- 	<nav class="sidenav">
-		<ul class="my-auto">
-			<li class="nav-item">
-				<a class="nav-link mb-5" href="home.html"><i class="fas fa-home fa-2x"></i></a>
-			</li>
+			<div class="col-12 col-sm-12 col-md-12 text-center">
+				<small>Charlene Gozar &copy; 2018 | No copyright intended, this is only for education purposes</small>
+			</div>
+		</footer>
+	</div>
 
-			<li class="nav-item">
-				<a class="nav-link mb-5 venus" href="female-model.html"><i class="fas fa-venus fa-2x"></i></a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link mb-5 mars" href="male-model.html"><i class="fas fa-mars fa-2x"></i></a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link mb-5" href="contact.html"><i class="fas fa-phone fa-2x"></i></a>
-			</li>
-		</ul>
-	</nav>
-
-	<main class="home-container">
-		<img src="assets/images/bg.jpg">
-	</main> -->
-
-
+</div> <!-- end of body container -->
 
 
 
@@ -295,4 +455,4 @@
 <!-- end of JavaScript -->
 
 </body>
-</html>
+</html2
