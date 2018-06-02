@@ -16,66 +16,50 @@
 	padding-left: 0;
 }
 
-#logo {
-	font-family: 'Crimson Text', serif;
-	font-size: 2em;
-	letter-spacing: 2px;
-}
-
-#about-image-overlay {
-	background-color: rgba(188,162,141, 0.4);
-}
-
-.banner-container {
-	height: 100vh;
-}
-.banner-image {
+#banner {
+	padding-left: 0;
+	padding-right: 0;
 	background-image: url("../images/banner-pic.jpg");
-	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.banner-container {
+	height: 100vh;
+	width: 100vw;
+}
 
-.overlay {
-	background-color: rgba(150,143,143, 0.5);
-	height: 100%;
+#logo {
+	font-family: 'Merriweather', serif;
+	font-size: 1.7rem;
+	letter-spacing: 2px;
 }
 
 .caption {
-	padding-top: 35%;
+	padding-top: 50%;
+	padding-bottom: 5%;
 	text-align: center;
 }
 
 .caption h1 {
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Merriweather', serif;
 	letter-spacing: 10px;
-	font-size: 8rem;
+	font-size: 7rem;
 }
 
 .caption h1,
 .caption p span {
-	color: #553332;
+	color: white;
 	font-weight: bolder;
 }
 
-.caption p span:hover {
-	color: #390b00;
+.caption p .sub-text:hover {
+	color: grey;
 	cursor: default;
 }
 
-.container {
-	height: 100vh;
-}
-
 #jumbotron {
-	background-color: transparent;
-}
-
-
-[class*="sample-images"] {
-	height: 32em;
-	max-height: 32em;
+	background-color: #f6f2df;
 }
 
 [class*="image-container"] {
@@ -103,6 +87,9 @@
 #parallax-bg-2 {
 	background-image: url("../images/parallax-bg-2.jpg");
 }
+#parallax-bg-3 {
+	background-image: url("../images/parallax-bg-3.jpg");
+}
 
 .parallax {
 	padding: 125px 0 30px 0;
@@ -114,7 +101,36 @@
 }
 
 
-
+/* ABOUT */
+#about-inner {
+	height: 300px;
+}
+#about-image-overlay {
+	background-color: rgba(188,162,141, 0.5);
+	height: 100%;
+}
+.founders-pic {
+	border-radius: 100%;
+}
+#founders-card .card,
+#founders-pics .card {
+	border: none;
+	background: transparent;
+}
+#founders-card {
+	background-color: rgba(219,213,199, 0.5);
+}
+#founders-pics {
+	background-color: rgba(142,121,133, 0.5);
+}
+.card-img-overlay {
+	background-color: rgba(188,162,141,0.5);
+	padding: 40% 1% 5% 1.5%;
+}
+.button-container {
+	position: absolute;
+	bottom: 5%;
+}
 
 
 /* APPLICATION */
@@ -155,8 +171,8 @@
 }
 #app-image-side {
 	z-index: 1;
-	-ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+	-ms-transform: rotate(-20deg); /* IE */
+    -webkit-transform: rotate(-20deg); /* Safari */
     transform: rotate(-20deg);
 	height: 75%;
 	left: 10%;
@@ -170,17 +186,12 @@
 }
 #app-image-fullbody {
 	z-index: 3;
-	-ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+	-ms-transform: rotate(20deg); /* IE */
+    -webkit-transform: rotate(20deg); /* Safari */
     transform: rotate(20deg);
 	height: 75%;
 	left: 49%;
 	top: 15%;
-}
-
-/* ABOUT */
-#about-inner {
-	background-color: rgba(188,162,141, 0.5);
 }
 
 /* TYTY TIPS */
@@ -233,29 +244,36 @@ footer div span a:hover {
 }
 .social-container {
 	width: 50%;
+	margin: auto;
 }
 #contact-container .card {
 	border: none;
 }
-
-
-/*ABOUT*/
-.card-img-overlay {
-	background-color: rgba(188,162,141,0.5);
-	padding: 40% 1% 5% 1.5%;
+.footer-links {
+	color: black;
+	font-weight: bold;
 }
-.button-container {
-	position: absolute;
-	bottom: 5%;
+.footer-links:hover {
+	color: gray;
+	text-decoration: none;
 }
-
 
 
 /* --------- MEDIA QUERIES --------- */
 @media only screen and (max-width: 600px) {
+	/*LANDING PAGE*/
 	.caption {
-		padding-top: 100%;
+		padding-top: 105%;
+		padding-bottom: 5%;
 		text-align: center;
+	}
+	.caption h1 {
+		font-family: 'Merriweather', serif;
+		letter-spacing: 10px;
+		font-size: 3.2rem;
+	}
+	.caption p span {
+		font-size: 1rem;
 	}
 
 	#above-main #section-container section .card figure img {
@@ -273,7 +291,7 @@ footer div span a:hover {
 
 	.container-fluid h3,
 	.parallax div span {
-		font-size: 1.7rem;
+		font-size: 1.3rem;
 	}
 
 	.container-fluid .card p {
@@ -292,10 +310,6 @@ footer div span a:hover {
 		font-size: 1rem;
 	}
 
-	.parallax .card .card-body {
-		min-width: 350px;
-	}
-
 	.parallax .card .card-header {
 		margin-top: 10px;
 	}
@@ -312,25 +326,25 @@ footer div span a:hover {
 
 	/*APPLICATION*/
 	#card {
-		height: 16em;
-		max-height: 16em;
+		height: 13em;
+		max-height: 13em;
 		position: relative;
 	}
 	#app-image-side {
-		height: 75%;
-		left: 10%;
-		top: 15%;
+		height: 70%;
+		left: 15%;
+		top: 16%;
 	}
 	#app-image-closeup {
 		z-index: 2;
-		height: 75%;
-		left: 30%;
-		top: 5%;
+		height: 70%;
+		left: 36%;
+		top: 6%;
 	}
 	#app-image-fullbody {
-		height: 75%;
-		left: 49%;
-		top: 15%;
+		height: 70%;
+		left: 54%;
+		top: 16%;
 	}
 
 	/*FOOTER*/
@@ -338,7 +352,6 @@ footer div span a:hover {
 		margin: 0 1%;
 	}
 	.social-container {
-		background-color: pink;
 		width: 50%;
 	}
 	/*TYTY TIPS*/
@@ -353,6 +366,18 @@ footer div span a:hover {
 } 
 
 @media only screen and (min-width: 600px) and (max-width: 767px){
+	/*LANDING PAGE*/
+	.caption {
+		padding-top: 85%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+	.caption h1 {
+		font-family: 'Merriweather', serif;
+		letter-spacing: 10px;
+		font-size: 8rem;
+	}
+
 	/*APPLICATION*/
 	#card {
 		height: 24em;
@@ -390,10 +415,10 @@ footer div span a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.caption {
-		padding-top: 90%;
+		padding-top: 85%;
+		padding-bottom: 5%;
 		text-align: center;
 	}
-
 	.container-fluid h3 {
 		font-size: 2.1rem;
 	}
@@ -438,15 +463,23 @@ footer div span a:hover {
 		width: 19em;
 		max-width: 19em;
 	}
-
-	/*MODEL IMAGES*/
-	[class*="sample-images"] {
-		height: 20em;
-		max-height: 20em;
-	}
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {
+ /*Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.caption {
+		padding-top: 86%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+}
 
-}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.caption {
+		padding-top: 35%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+}
