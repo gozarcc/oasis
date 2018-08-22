@@ -80,6 +80,15 @@
 	z-index: 1;
 }
 
+.parallax {
+	padding: 125px 0 30px 0;
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #parallax-bg-1 {
 	background-image: url("../images/parallax-bg-1.jpg");
 }
@@ -89,15 +98,7 @@
 }
 #parallax-bg-3 {
 	background-image: url("../images/parallax-bg-3.jpg");
-}
-
-.parallax {
-	padding: 125px 0 30px 0;
-	min-height: 500px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding: 1px 0 42px 0;
 }
 
 
@@ -222,11 +223,21 @@
 
 
 /* FOOTER */
+footer {
+	background-color: #000;
+}
 footer div span a {
-	color: #390b00;
+	color: #fff;
 }
 footer div span a:hover {
 	color: 	#725b64;
+}
+footer div small,
+footer div small a {
+	color: #fff !important;
+}
+footer div small a:hover {
+	color: 	#725b64 !important;
 }
 #back-to-top {
 	color: grey;
